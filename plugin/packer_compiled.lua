@@ -154,11 +154,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["omnisharp-vim"] = {
-    loaded = true,
-    path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\omnisharp-vim",
-    url = "https://github.com/Omnisharp/omnisharp-vim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -184,6 +179,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   }
 }
 

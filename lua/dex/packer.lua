@@ -54,5 +54,5 @@ return require('packer').startup(function(use)
 
     use 'Raimondi/delimitMate'
 
-    use 'Omnisharp/omnisharp-vim' 
+    use 'tpope/vim-fugitive'
 end)
