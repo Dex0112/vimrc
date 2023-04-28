@@ -18,10 +18,15 @@ return require('packer').startup(function(use)
         as = 'rose-pine',
         config = function()
             require("rose-pine").setup()
-            vim.cmd('colorscheme rose-pine')
         end
     })
 
+    use {
+        'olimorris/onedarkpro.nvim',
+        as = 'onedark'
+    }
+
+    use { 'catppuccin/nvim', as = 'catppuccin' }
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('nvim-treesitter/playground')
@@ -50,9 +55,9 @@ return require('packer').startup(function(use)
         }
     }
 
-    use 'dense-analysis/ale'
-
+    --Auto close punctuation
     use 'Raimondi/delimitMate'
 
+    --git integration
     use 'tpope/vim-fugitive'
 end)
