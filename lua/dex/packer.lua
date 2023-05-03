@@ -30,6 +30,7 @@ return require('packer').startup(function(use)
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('nvim-treesitter/playground')
+    use 'nvim-treesitter/nvim-treesitter-context'
     use('theprimeagen/harpoon')
 
     use {
@@ -60,4 +61,15 @@ return require('packer').startup(function(use)
 
     --git integration
     use 'tpope/vim-fugitive'
+
+--  use{
+--      'hrsh7th/cmp-nvim-lsp-signature-help',
+--      config = function()
+--          require('cmp').setup({
+--              sources = {
+--                  { name = 'nvim_lsp_signature_help' }
+--              }
+--          })
+--      end
+--  }
 end)
