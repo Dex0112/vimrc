@@ -12,7 +12,7 @@ vim.keymap.set({'n', 'v'}, '<leader>P', [["+P]])
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
-vim.keymap.set("n", "<leader><leader>", function()
+    vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 

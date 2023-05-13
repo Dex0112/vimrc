@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  delimitMate = {
-    loaded = true,
-    path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\delimitMate",
-    url = "https://github.com/Raimondi/delimitMate"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",

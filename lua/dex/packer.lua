@@ -56,20 +56,6 @@ return require('packer').startup(function(use)
         }
     }
 
-    --Auto close punctuation
-    use 'Raimondi/delimitMate'
-
     --git integration
     use 'tpope/vim-fugitive'
-
---  use{
---      'hrsh7th/cmp-nvim-lsp-signature-help',
---      config = function()
---          require('cmp').setup({
---              sources = {
---                  { name = 'nvim_lsp_signature_help' }
---              }
---          })
---      end
---  }
 end)
