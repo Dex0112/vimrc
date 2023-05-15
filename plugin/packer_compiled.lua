@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  delimitMate = {
+    loaded = true,
+    path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\delimitMate",
+    url = "https://github.com/Raimondi/delimitMate"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
@@ -173,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["presence.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\presence.nvim",
+    url = "https://github.com/andweeb/presence.nvim"
   },
   ["rose-pine"] = {
     config = { "\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14rose-pine\frequire\0" },

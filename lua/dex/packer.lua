@@ -56,6 +56,12 @@ return require('packer').startup(function(use)
         }
     }
 
+    --Discord status
+    use 'andweeb/presence.nvim'
+
+    --Auto close punctuation
+    use 'Raimondi/delimitMate'
+
     --git integration
     use 'tpope/vim-fugitive'
 end)
