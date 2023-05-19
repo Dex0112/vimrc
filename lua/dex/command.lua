@@ -8,6 +8,7 @@ function GoToDir(dir)
     vim.cmd(":e "..dir)
 end
 
+vim.cmd("command! -nargs=1 SetColorscheme lua SetColorscheme(<f-args>)")
 
 vim.cmd("command! Config :lua GoToDir('$HOME/AppData/Local/nvim')")
 
