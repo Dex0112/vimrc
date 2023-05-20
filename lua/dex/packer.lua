@@ -74,7 +74,10 @@ return require('packer').startup(function(use)
     use 'andweeb/presence.nvim'
 
     --Auto close punctuation
-    use 'Raimondi/delimitMate'
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
 
     --git integration
     use 'tpope/vim-fugitive'

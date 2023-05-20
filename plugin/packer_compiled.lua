@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  delimitMate = {
-    loaded = true,
-    path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\delimitMate",
-    url = "https://github.com/Raimondi/delimitMate"
-  },
   dracula = {
     loaded = true,
     path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dracula",
@@ -143,6 +138,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nvim-autopairs"] = {
+    config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\Landon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -224,14 +225,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: sonokai
-time([[Config for sonokai]], true)
-try_loadstring("\27LJ\2\n9\0\0\2\0\4\0\0056\0\0\0009\0\1\0'\1\3\0=\1\2\0K\0\1\0\14andromeda\18sonokai_style\6g\bvim\0", "config", "sonokai")
-time([[Config for sonokai]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14rose-pine\frequire\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: sonokai
+time([[Config for sonokai]], true)
+try_loadstring("\27LJ\2\n9\0\0\2\0\4\0\0056\0\0\0009\0\1\0'\1\3\0=\1\2\0K\0\1\0\14andromeda\18sonokai_style\6g\bvim\0", "config", "sonokai")
+time([[Config for sonokai]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
