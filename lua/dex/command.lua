@@ -13,3 +13,5 @@ vim.cmd("command! -nargs=1 SetColorscheme lua SetColorscheme(<f-args>)")
 vim.cmd("command! Config :lua GoToDir('$HOME/AppData/Local/nvim')")
 
 vim.cmd("command! Return :lua GoToDir(Prev_Dir)")
+
+vim.cmd("command! Packer :source $HOME/Appdata/Local/nvim/lua/dex/packer.lua | PackerSync")
