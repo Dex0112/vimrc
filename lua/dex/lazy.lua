@@ -49,13 +49,16 @@ local plugins = {
     { 'catppuccin/nvim',                 name = 'catppuccin', lazy = true },
     { 'Mofiqul/dracula.nvim',            name = 'dracula',    lazy = true },
     { 'tiagovla/tokyodark.nvim',         name = "tokyodark",  lazy = true },
-    --End
 
+    --Treesitter
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
     'nvim-treesitter/playground',
     { 'nvim-treesitter/nvim-treesitter-context', lazy = true },
+
+    --Harpoon
     { 'theprimeagen/harpoon',                    lazy = true },
 
+    --Lsp
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
