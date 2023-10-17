@@ -15,6 +15,10 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     {
+        'iamcco/markdown-preview.nvim',
+    },
+
+    {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.1',
         -- or                            , branch = '0.1.x',
@@ -57,6 +61,9 @@ local plugins = {
 
     --Harpoon
     { 'theprimeagen/harpoon',                    lazy = true },
+
+    --Undotree
+    { 'mbbill/undotree' },
 
     --Lsp
     {
