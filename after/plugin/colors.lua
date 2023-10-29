@@ -3,8 +3,8 @@ function SetColorscheme(color)
 
     vim.cmd("colorscheme " .. color)
 
---    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
---    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
     COLORSCHEME = color
 
@@ -17,6 +17,7 @@ function SetColorscheme(color)
 end
 
 local file = io.open(vim.fn.stdpath('data') .. '/colorscheme.txt', 'r')
+
 if file ~= nil then
     COLORSCHEME = file:read()
     file:close()
