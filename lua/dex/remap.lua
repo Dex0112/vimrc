@@ -17,5 +17,3 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
-
-vim.keymap.set("n", "<C-a>", "GVgg")
