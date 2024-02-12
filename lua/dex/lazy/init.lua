@@ -8,10 +8,4 @@ return {
     },
 
     'nvim-treesitter/nvim-treesitter-context',
-
-    --Auto close punctuation
-    {
-        "windwp/nvim-autopairs",
-        config = function() require("nvim-autopairs").setup {} end,
-    },
 }
