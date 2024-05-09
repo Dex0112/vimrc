@@ -1,14 +1,12 @@
 return {
-    --Colorschemes
     {
-        'rose-pine/neovim',
-        name = 'rose-pine',
+        'mellow-theme/mellow.nvim',
+        name = 'mellow',
         config = function()
-            require("rose-pine").setup()
+            vim.g.mellow_transparent = true
         end,
-        lazy = true
+        lazy = true,
     },
-
     {
         'olimorris/onedarkpro.nvim',
         name = 'onedark',
@@ -24,7 +22,7 @@ return {
         lazy = true
     },
 
-    { 'catppuccin/nvim',                 name = 'catppuccin', lazy = true },
-    { 'Mofiqul/dracula.nvim',            name = 'dracula',    lazy = true },
-    { 'tiagovla/tokyodark.nvim',         name = "tokyodark",  lazy = true },
+    { 'catppuccin/nvim',         name = 'catppuccin', lazy = true },
+    { 'Mofiqul/dracula.nvim',    name = 'dracula',    lazy = true },
+    { 'tiagovla/tokyodark.nvim', name = "tokyodark",  lazy = true },
 }
