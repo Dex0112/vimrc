@@ -8,6 +8,7 @@ return {
         'L3MON4D3/LuaSnip',
         'saadparwaiz1/cmp_luasnip',
         'hrsh7th/cmp-path',
+        'hrsh7th/cmp-buffer',
         'j-hui/fidget.nvim',
     },
 
@@ -44,7 +45,7 @@ return {
                         Lua = {
                             runtime = { version = "Lua 5.1" },
                             diagnostics = {
-                                globals = { "vim", },
+                                globals = { "vim" },
                             }
                         },
                     },
