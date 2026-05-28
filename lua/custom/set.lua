@@ -29,6 +29,8 @@ do
   vim.o.splitright = true
   vim.o.splitbelow = true
 
+  vim.o.shiftwidth = 2
+
   vim.o.list = true
   vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
@@ -37,6 +39,5 @@ do
   vim.o.cursorline = true
 
   vim.o.scrolloff = 10
-
   vim.o.confirm = true
 end

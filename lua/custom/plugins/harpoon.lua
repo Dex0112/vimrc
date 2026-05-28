@@ -1,0 +1,16 @@
+do
+  vim.pack.add {
+    { src = 'https://github.com/ThePrimeagen/harpoon', version = 'harpoon2' },
+    'https://github.com/nvim-lua/plenary.nvim',
+  }
+
+  local harpoon = require('harpoon'):setup()
+
+  vim.keymap.set('n', '<leader>a', function() harpoon:list():add() end)
+  vim.keymap.set('n', '<leader>e', function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+
+  vim.keymap.set('n', '<M-j>', function() harpoon:list():select(1) end)
+  vim.keymap.set('n', '<M-k>', function() harpoon:list():select(2) end)
+  vim.keymap.set('n', '<M-l>', function() harpoon:list():select(3) end)
+  vim.keymap.set('n', '<M-;>', function() harpoon:list():select(4) end)
+end
