@@ -22,6 +22,8 @@ do
 
   vim.o.signcolumn = 'yes'
 
+  vim.o.colorcolumn = '80'
+
   vim.o.updatetime = 250
 
   vim.o.timeoutlen = 300
@@ -40,4 +42,8 @@ do
 
   vim.o.scrolloff = 10
   vim.o.confirm = true
+
+  vim.g.netrw_browse_split = 0
+  vim.g.netrw_banner = 0
+  vim.g.netrw_winsize = 25
 end
