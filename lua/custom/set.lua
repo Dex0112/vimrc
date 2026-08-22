@@ -32,7 +32,7 @@ do
   vim.o.splitright = true
   vim.o.splitbelow = true
 
-  vim.o.shiftwidth = 2
+  vim.o.shiftwidth = 4
 
   vim.o.list = true
   vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }

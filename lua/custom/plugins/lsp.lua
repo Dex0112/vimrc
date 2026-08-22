@@ -30,11 +30,6 @@ do
   vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
     callback = function(event)
-      -- NOTE: Remember that Lua is a real programming language, and as such it is possible
-      -- to define small helper and utility functions so you don't have to repeat yourself.
-      --
-      -- In this case, we create a function that lets us more easily define mappings specific
-      -- for LSP related items. It sets the mode, buffer and description for us each time.
       local map = function(keys, func, desc, mode)
         mode = mode or 'n'
         vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
@@ -97,8 +92,9 @@ do
   --  See `:help lsp-config` for information about keys and how to configure
   ---@type table<string, vim.lsp.Config>
   local servers = {
-
     stylua = {}, -- Used to format Lua code
+    clangd = {},
+    bashls = {},
 
     -- Special Lua Config, as recommended by neovim help docs
     lua_ls = {
@@ -138,7 +134,7 @@ do
       cmd = {
         'arduino-language-server',
         '-fqbn',
-        'esp32:esp32:esp32da',
+        'esp32:esp32:esp32',
       },
     },
   }
